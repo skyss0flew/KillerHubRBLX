@@ -1,0 +1,170 @@
+-- this script is a universal script, but made for sharkbite so i recommend only playing this on sharkbite :)
+
+-- project started on 23/05/2022 6:36 pm AEST
+-- Support the project by leaving a like on the website the script is published on
+-- built in roblox studio. plugins used: Gui to Lua
+-- make sure to check the website out in case this script updates. this is the beta script, eventually it will be a loadstring script
+-- Made with love by skyss0fly 
+-- script is in beta but here it is:
+
+-- unlock the script by removing this part --
+
+game.Players.LocalPlayer:Kick("agree, that the creator of this script is not responsible for you to be banned by removing this line in the script. aka the agreements line :)")
+
+---------------------------------------------
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local PlayerFrame = Instance.new("ScrollingFrame")
+local ResetPlayer = Instance.new("TextButton")
+local TextButton = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local GameFrame = Instance.new("ScrollingFrame")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextButton_2 = Instance.new("TextButton")
+local Frame = Instance.new("Frame")
+local ImageLabel = Instance.new("ImageLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+PlayerFrame.Name = "PlayerFrame"
+PlayerFrame.Parent = ScreenGui
+PlayerFrame.Active = true
+PlayerFrame.BackgroundColor3 = Color3.fromRGB(79, 255, 250)
+PlayerFrame.Position = UDim2.new(0.788449824, 0, 0.025029812, 0)
+PlayerFrame.Size = UDim2.new(0, 246, 0, 489)
+
+ResetPlayer.Name = "Reset Player"
+ResetPlayer.Parent = PlayerFrame
+ResetPlayer.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ResetPlayer.Position = UDim2.new(0, 0, 0.107270554, 0)
+ResetPlayer.Size = UDim2.new(0, 200, 0, 50)
+ResetPlayer.Font = Enum.Font.SourceSans
+ResetPlayer.Text = "Reset Player"
+ResetPlayer.TextColor3 = Color3.fromRGB(0, 0, 0)
+ResetPlayer.TextSize = 14.000
+
+TextButton.Parent = PlayerFrame
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.Position = UDim2.new(0, 0, 0.0774731785, 0)
+TextButton.Size = UDim2.new(0, 200, 0, 50)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "godmode"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 14.000
+
+TextLabel.Parent = PlayerFrame
+TextLabel.BackgroundColor3 = Color3.fromRGB(138, 255, 203)
+TextLabel.Position = UDim2.new(0, 0, -0.000595947553, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 50)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Player"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+GameFrame.Name = "GameFrame"
+GameFrame.Parent = ScreenGui
+GameFrame.Active = true
+GameFrame.BackgroundColor3 = Color3.fromRGB(122, 255, 85)
+GameFrame.Position = UDim2.new(0.63708204, 0, 0.0250297971, 0)
+GameFrame.Size = UDim2.new(0, 233, 0, 489)
+
+TextLabel_2.Parent = GameFrame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(95, 255, 51)
+TextLabel_2.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "Game"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+TextButton_2.Parent = GameFrame
+TextButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.Position = UDim2.new(0, 0, 0.0768772364, 0)
+TextButton_2.Size = UDim2.new(0, 200, 0, 50)
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.Text = "MAKE UR BOAT FLY"
+TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.TextSize = 14.000
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.Position = UDim2.new(0.920972645, 0, 0.656734109, 0)
+Frame.Size = UDim2.new(0, 100, 0, 100)
+
+ImageLabel.Parent = Frame
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.Position = UDim2.new(-0.00754070282, 0, -0.000456899405, 0)
+ImageLabel.Size = UDim2.new(0, 100, 0, 100)
+ImageLabel.Image = "http://www.roblox.com/asset/?id=9704914660"
+
+-- Scripts:
+
+local function LDZYVKI_fake_script() -- ResetPlayer.LocalScript 
+	local script = Instance.new('LocalScript', ResetPlayer)
+
+	script.Parent.MouseButton1Click:Connect(function(plr)
+		game.Players.LocalPlayer.Character.Humanoid.Health = 0
+	end)
+end
+coroutine.wrap(LDZYVKI_fake_script)()
+local function RFCLIZ_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	script.Parent.MouseButton1Click:Connect(function(plr)
+		game.Players.LocalPlayer.Character.Humanoid.Health = 999999
+	end)
+end
+coroutine.wrap(RFCLIZ_fake_script)()
+local function FFVNG_fake_script() -- PlayerFrame.Script 
+	local script = Instance.new('Script', PlayerFrame)
+
+	frame = script.Parent.PlayerFrame
+	frame.Draggable = true
+	frame.Active = true
+	frame.Selectable = true
+end
+coroutine.wrap(FFVNG_fake_script)()
+local function QQJN_fake_script() -- GameFrame.Script 
+	local script = Instance.new('Script', GameFrame)
+
+	frame = script.Parent.GameFrame
+	frame.Draggable = true
+	frame.Active = true
+	frame.Selectable = true
+end
+coroutine.wrap(QQJN_fake_script)()
+local function TGDG_fake_script() -- TextButton_2.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_2)
+
+	local mt = getrawmetatable(game)
+	local onc = mt.__namecall
+	_G.Multiplier = 5
+	setreadonly(mt,false)
+	local tog = false
+	mt.__namecall = function(...)
+		local t={...}
+		if getnamecallmethod() == 'FireServer' then
+			for i,v in pairs({...}) do
+				if tostring(v) == 'EngineEvent'  then
+					t[2] = t[2] * _G.Multiplier
+					t[3] = t[3]+Vector3.new(0,0,(t[3].Z*_G.Multiplier)-t[3].Z)  
+					print('edited')
+					break;
+				end
+			end
+		end
+		return onc(unpack(t))
+	end
+	Copy
+
+end
+coroutine.wrap(TGDG_fake_script)()
